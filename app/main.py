@@ -3,6 +3,11 @@ from pydantic import BaseModel
 
 app = FastAPI(title="CI/CD K8s Demo", version="0.1.0")
 
+# Add this root endpoint
+@app.get("/")
+def read_root():
+    return {"message": "Hello, World!"}
+
 class AddRequest(BaseModel):
     a: int
     b: int
