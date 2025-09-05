@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: YOUR_DOCKERHUB_USERNAME/ci-cd-k8s-demo:latest   # TODO: set
+          image: tamil2303a/ci-cd-k8s-demo:latest   # TODO: set
           ports:
             - containerPort: 80
           readinessProbe:
