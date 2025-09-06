@@ -10,6 +10,8 @@ This project demonstrates how to build, test, and deploy a **FastAPI application
 1. **Code Development (FastAPI App)**
    - The backend application is developed using **FastAPI**.
    - The main endpoint `/` returns `"Hello World"`.
+   - The endpoint `/docs` will open interactive API docs.
+
 
 2. **Version Control (GitHub)**
    - Source code, Dockerfile, Kubernetes manifests, and workflow files are stored in a GitHub repository.
@@ -78,13 +80,12 @@ This project demonstrates how to build, test, and deploy a **FastAPI application
 
 ## ✅ API Endpoints
 - **GET /** → Returns `"Hello World"`
+- **GET /docs** → will open interactive API docs
 
 ---
 
 ## 🔑 Secrets Required in GitHub Actions
 To ensure secure deployment, the following secrets must be set in the GitHub repository:
 - `DOCKERHUB_USERNAME` → Your DockerHub username  
-- `DOCKERHUB_TOKEN` → DockerHub access token or password  
-- `KUBE_CONFIG_DATA` → Base64 encoded Kubernetes config file  
-
+- `DOCKERHUB_TOKEN` → DockerHub access token or password
 ---
