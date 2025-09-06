@@ -44,8 +44,10 @@ This project demonstrates how to build, test, and deploy a **FastAPI application
 ```bash
 .
 ├── app/
+│ └── __init__.py
 │ └── main.py # FastAPI application
 ├── tests/
+│ └── __init__.py
 │ └── test_main.py # Pytest test cases
 ├── Dockerfile # Docker build file
 ├── requirements.txt # Python dependencies
